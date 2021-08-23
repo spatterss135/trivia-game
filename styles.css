@@ -1,0 +1,61 @@
+
+body {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    position: absolute; 
+    width: 600px;
+    border: 1px black solid;
+    margin-top: 200px;
+      
+}
+.glowBoy {
+    animation: blinkGreen 0.25s;
+}
+
+.question {
+    margin: 50px;
+    padding: 20px;
+    border: 1px black solid;
+    text-align: center;
+    background-color: white;
+   
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px black solid;
+    background-color: white;
+}
+
+.current-game {
+    border: 1px black solid;
+    padding: 5px
+}
+
+
+#name ,#score {
+    display: inline-block;
+}
+
+@keyframes blinkRed {
+    50% {
+        background-color: red;
+    }
+    100% {
+        background-color: white;
+    }
+    
+}
+
+@keyframes blinkGreen {
+    50% {
+        background-color: green;
+    }
+    100% {
+        background-color: white;
+    }
+    
+}
